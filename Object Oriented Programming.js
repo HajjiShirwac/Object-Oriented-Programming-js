@@ -51,3 +51,11 @@ function Dog(name,color) {
   
   }
   let terrier = new Dog("loopy","yellow");
+// Verify an Object's Constructor with instanceof
+let House = function (numBedrooms) {
+    this.numBedrooms = numBedrooms;
+  }
+  
+  // Only change code below this line
+  let myHouse = new House(14);
+  myHouse instanceof House;
