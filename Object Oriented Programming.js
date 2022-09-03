@@ -7,10 +7,16 @@ let dog = {
   };
 
 //   Use Dot Notation to Access the Properties of an Object
-  let duck = {
+  let Duck = {
     name: "Aflac",
     numLegs: 2
   };
-  console.log(duck.name);
+  console.log(Duck.name);
 
-  
+  // Creating a Method on an Object
+  let duck = {
+    name: "Aflac",
+    numLegs: 2,
+    sayName: function() {return "The name of this duck is " + duck.name + ".";}
+  };
+  duck.sayName();
