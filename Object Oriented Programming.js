@@ -20,3 +20,13 @@ let dog = {
     sayName: function() {return "The name of this duck is " + duck.name + ".";}
   };
   duck.sayName();
+//   Make Code More Reusable with the this Keyword
+  let Dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {
+      return "This dog has " + this.numLegs + " legs.";
+    }
+  };
+  
+  Dog.sayLegs();
