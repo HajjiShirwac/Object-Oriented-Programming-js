@@ -73,3 +73,11 @@ function Bird(name) {
       ownProps.push(property);
     }
   }
+//   Using Prototype Properties to Reduce Duplicate Code
+function Dog(name) {
+    this.name = name;
+  }
+  Dog.prototype.numLegs = 2;
+  
+  
+  let beagle = new Dog("Snoopy");
