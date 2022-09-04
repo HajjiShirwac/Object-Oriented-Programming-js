@@ -148,3 +148,12 @@ function Dog(name) {
           console.log("My name is " + this.name);
         }
       };
+    //   Understand Where an Object’s Prototype Comes From
+    function Dog(name) {
+        this.name = name;
+      }
+      
+      let Beagle = new Dog("Snoopy");
+      
+      
+      Dog.prototype.isPrototypeOf(Beagle);
